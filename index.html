@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sunrise International School | LKG to 10th Standard | English Medium</title>
+
+    <meta name="description"
+          content="Sunrise International School provides quality English medium education from LKG to 10th standard with highly qualified teachers, computer labs, spoken English, general knowledge and extracurricular activities.">
+
+    <meta name="keywords"
+          content="Sunrise International School, English medium school, LKG to 10th school, best school, computer lab, spoken English, extracurricular activities">
+
+    <meta name="author" content="Sunrise International School">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            background: #0b3d91;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #ffd54a;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd54a;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+
+            background:
+                linear-gradient(
+                    rgba(5, 34, 80, 0.75),
+                    rgba(5, 34, 80, 0.75)
+                ),
+                url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1800&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        .hero-content h1 {
+            font-size: 58px;
+            max-width: 750px;
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+
+        .hero-content h1 span {
+            color: #ffd54a;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            max-width: 700px;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 7px;
+            font-weight: bold;
+            margin-right: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #ffd54a;
+            color: #14213d;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #0b3d91;
+        }
+
+        /* ================= GENERAL ================= */
+
+        section {
+            padding: 80px 25px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            color: #0b3d91;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* ================= ABOUT ================= */
+
+        .about {
+            background: #f7f9fc;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image img {
+            border-radius: 15px;
+            height: 430px;
+            object-fit: cover;
+        }
+
+        .about-content h3 {
+            font-size: 30px;
+            color: #0b3d91;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        /* ================= STATS ================= */
+
+        .stats {
+            background: #0b3d91;
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            text-align: center;
+        }
+
+        .stat h3 {
+            font-size: 42px;
+            color: #ffd54a;
+        }
+
+        .stat p {
+            font-size: 16px;
+        }
+
+        /* ================= ACADEMICS ================= */
+
+        .academics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .academic-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #e5e5e5;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .academic-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .academic-card h3 {
+            color: #0b3d91;
+            margin-bottom: 12px;
+        }
+
+        .academic-card p {
+            color: #666;
+        }
+
+        /* ================= FACILITIES ================= */
+
+        .facilities {
+            background: #f7f9fc;
+        }
+
+        .facility-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .facility-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+        }
+
+        .facility-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .facility-content {
+            padding: 25px;
+        }
+
+        .facility-content h3 {
+            color: #0b3d91;
+            margin-bottom: 10px;
+        }
+
+        .facility-content p {
+            color: #666;
+        }
+
+        /* ================= ACTIVITIES ================= */
+
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .activity {
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 12px;
+            background: #f7f9fc;
+        }
+
+        .activity-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .activity h3 {
+            color: #0b3d91;
+            margin-bottom: 8px;
+        }
+
+        .activity p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* ================= TEACHERS ================= */
+
+        .teachers {
+            background: #f7f9fc;
+        }
+
+        .teacher-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .teacher-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+        }
+
+        .teacher-card img {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .teacher-info {
+            padding: 22px;
+        }
+
+        .teacher-info h3 {
+            color: #0b3d91;
+        }
+
+        .teacher-info p {
+            color: #777;
+        }
+
+        /* ================= ACHIEVEMENTS ================= */
+
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .achievement {
+            border-left: 5px solid #ffd54a;
+            background: #f7f9fc;
+            padding: 25px;
+        }
+
+        .achievement h3 {
+            color: #0b3d91;
+            margin-bottom: 10px;
+        }
+
+        /* ================= ADMISSIONS ================= */
+
+        .admission {
+            background:
+                linear-gradient(
+                    rgba(11,61,145,0.92),
+                    rgba(11,61,145,0.92)
+                ),
+                url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1800&q=80");
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .admission h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .admission p {
+            max-width: 750px;
+            margin: auto auto 30px;
+            font-size: 18px;
+        }
+
+        /* ================= CONTACT ================= */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-info h3 {
+            color: #0b3d91;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            margin-bottom: 20px;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #0b3d91;
+        }
+
+        .contact-form {
+            background: #f7f9fc;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .contact-form textarea {
+            height: 130px;
+            resize: none;
+        }
+
+        .contact-form button {
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #071f4d;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer p {
+            color: #cbd5e1;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 900px) {
+
+            .hero-content h1 {
+                font-size: 45px;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .academics-grid,
+            .facility-grid,
+            .teacher-grid,
+            .achievement-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .activity-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            section {
+                padding: 60px 18px;
+            }
+
+            .hero {
+                min-height: 550px;
+            }
+
+            .hero-content h1 {
+                font-size: 38px;
+            }
+
+            .hero-content p {
+                font-size: 17px;
+            }
+
+            .stats-grid,
+            .academics-grid,
+            .facility-grid,
+            .teacher-grid,
+            .achievement-grid,
+            .activity-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            .btn {
+                display: block;
+                text-align: center;
+                margin-bottom: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            Sunrise <span>International School</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            Building Bright
+            <span>Futures</span>
+            Through Education
+        </h1>
+
+        <p>
+            Quality English Medium Education from LKG to 10th Standard,
+            supported by experienced teachers, modern facilities and
+            a strong focus on academic excellence.
+        </p>
+
+        <a href="#admissions" class="btn btn-primary">
+            Admissions Open
+        </a>
+
+        <a href="#about" class="btn btn-outline">
+            Discover Our School
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>About Our School</h2>
+            <p>
+                Creating confident, knowledgeable and responsible
+                students for a brighter tomorrow.
+            </p>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1000&q=80"
+                    alt="Students and teachers at Sunrise International School"
+                >
+
+            </div>
+
+            <div class="about-content">
+
+                <h3>Education Beyond Classrooms</h3>
+
+                <p>
+                    Sunrise International School is committed to providing
+                    high-quality English medium education from LKG to
+                    10th standard.
+                </p>
+
+                <p>
+                    Our experienced and highly qualified teachers focus
+                    on developing strong academic foundations while
+                    encouraging creativity, communication and critical
+                    thinking.
+                </p>
+
+                <p>
+                    We believe every child has unique potential.
+                    Our goal is to create a safe, supportive and
+                    inspiring environment where students can discover
+                    their strengths and achieve their goals.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat">
+                <h3>10+</h3>
+                <p>Years of Excellence</p>
+            </div>
+
+            <div class="stat">
+                <h3>1000+</h3>
+                <p>Students</p>
+            </div>
+
+            <div class="stat">
+                <h3>50+</h3>
+                <p>Qualified Teachers</p>
+            </div>
+
+            <div class="stat">
+                <h3>95%</h3>
+                <p>Academic Success</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ACADEMICS ================= -->
+
+<section id="academics">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Academic Excellence</h2>
+
+            <p>
+                A structured learning journey designed for every
+                stage of a child's development.
+            </p>
+
+        </div>
+
+        <div class="academics-grid">
+
+            <div class="academic-card">
+
+                <h3>Early Years</h3>
+
+                <p>
+                    LKG and UKG students learn through engaging
+                    activities, storytelling, creativity and
+                    interactive classroom experiences.
+                </p>
+
+            </div>
+
+            <div class="academic-card">
+
+                <h3>Primary School</h3>
+
+                <p>
+                    Classes 1 to 5 focus on strong foundations in
+                    Mathematics, English, Science and General Knowledge.
+                </p>
+
+            </div>
+
+            <div class="academic-card">
+
+                <h3>High School</h3>
+
+                <p>
+                    Classes 6 to 10 receive focused academic guidance,
+                    examination preparation and career-oriented learning.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FACILITIES ================= -->
+
+<section class="facilities" id="facilities">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Our Facilities</h2>
+
+            <p>
+                Modern facilities that support academic and
+                personal development.
+            </p>
+
+        </div>
+
+        <div class="facility-grid">
+
+            <div class="facility-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80"
+                    alt="School campus building"
+                >
+
+                <div class="facility-content">
+
+                    <h3>Modern Campus</h3>
+
+                    <p>
+                        A safe, spacious and student-friendly campus
+                        designed for effective learning.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="facility-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80"
+                    alt="Students using computers in school computer laboratory"
+                >
+
+                <div class="facility-content">
+
+                    <h3>Computer Labs</h3>
+
+                    <p>
+                        Well-equipped computer laboratories to help
+                        students develop essential digital skills.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="facility-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80"
+                    alt="Students participating in school activities"
+                >
+
+                <div class="facility-content">
+
+                    <h3>Activity Spaces</h3>
+
+                    <p>
+                        Dedicated spaces for sports, cultural events,
+                        creativity and extracurricular activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ACTIVITIES ================= -->
+
+<section id="activities">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Beyond Academics</h2>
+
+            <p>
+                We help students become confident and well-rounded
+                individuals.
+            </p>
+
+        </div>
+
+        <div class="activity-grid">
+
+            <div class="activity">
+
+                <div class="activity-icon">📚</div>
+
+                <h3>General Knowledge</h3>
+
+                <p>
+                    Encouraging curiosity and awareness about
+                    the world around us.
+                </p>
+
+            </div>
+
+
+            <div class="activity">
+
+                <div class="activity-icon">🗣️</div>
+
+                <h3>Spoken English</h3>
+
+                <p>
+                    Developing communication skills and confidence
+                    through practical activities.
+                </p>
+
+            </div>
+
+
+            <div class="activity">
+
+                <div class="activity-icon">⚽</div>
+
+                <h3>Sports</h3>
+
+                <p>
+                    Promoting teamwork, discipline and healthy
+                    physical development.
+                </p>
+
+            </div>
+
+
+            <div class="activity">
+
+                <div class="activity-icon">🎨</div>
+
+                <h3>Creative Activities</h3>
+
+                <p>
+                    Encouraging creativity through art, cultural
+                    activities and competitions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TEACHERS ================= -->
+
+<section class="teachers">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Our Teachers</h2>
+
+            <p>
+                Highly qualified and experienced educators
+                dedicated to student success.
+            </p>
+
+        </div>
+
+        <div class="teacher-grid">
+
+            <div class="teacher-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
+                    alt="Experienced school teacher"
+                >
+
+                <div class="teacher-info">
+
+                    <h3>Academic Excellence</h3>
+
+                    <p>Experienced teaching professionals</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="teacher-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80"
+                    alt="Qualified female teacher"
+                >
+
+                <div class="teacher-info">
+
+                    <h3>Personal Attention</h3>
+
+                    <p>Focused on every student's growth</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="teacher-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80"
+                    alt="Teacher working with students"
+                >
+
+                <div class="teacher-info">
+
+                    <h3>Student Support</h3>
+
+                    <p>Guidance inside and outside classrooms</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Our Achievements</h2>
+
+            <p>
+                A culture of hard work, discipline and continuous improvement.
+            </p>
+
+        </div>
+
+        <div class="achievement-grid">
+
+            <div class="achievement">
+
+                <h3>Academic Top Ranks</h3>
+
+                <p>
+                    Our students consistently achieve excellent
+                    results in academic examinations.
+                </p>
+
+            </div>
+
+            <div class="achievement">
+
+                <h3>City-Level Recognition</h3>
+
+                <p>
+                    Students participate and perform successfully
+                    in competitions across the city.
+                </p>
+
+            </div>
+
+            <div class="achievement">
+
+                <h3>All-Round Development</h3>
+
+                <p>
+                    We encourage academic, sporting, creative and
+                    communication skills.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ADMISSIONS ================= -->
+
+<section class="admission" id="admissions">
+
+    <div class="container">
+
+        <h2>Admissions Open</h2>
+
+        <p>
+            Give your child the opportunity to learn, grow and
+            build a successful future in a supportive educational environment.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+            Enquire Now
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Contact Us</h2>
+
+            <p>
+                We would be happy to answer your questions about
+                admissions and our school.
+            </p>
+
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <h3>Sunrise International School</h3>
+
+                <div class="contact-item">
+
+                    <strong>Address</strong>
+
+                    <p>
+                        123 Education Road,<br>
+                        Hyderabad, Telangana, India
+                    </p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <strong>Phone</strong>
+
+                    <p>+91 98765 43210</p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <strong>Email</strong>
+
+                    <p>info@sunriseinternationalschool.com</p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <strong>School Hours</strong>
+
+                    <p>
+                        Monday - Saturday<br>
+                        8:30 AM - 4:00 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Parent / Student Name"
+                >
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                >
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                >
+
+                <textarea
+                    placeholder="Your message"
+                ></textarea>
+
+                <button class="btn btn-primary">
+                    Send Enquiry
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Sunrise International School. All Rights Reserved.
+    </p>
+
+    <p>
+        English Medium School | LKG to 10th Standard
+    </p>
+
+</footer>
+
+
+</body>
+</html>
